@@ -23,7 +23,7 @@ class Iskele extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("selman uygulama"),
+        title: Text("Ece uygulama"),
       ),
       body: selmanBody(),
     );
@@ -39,7 +39,7 @@ class selmanBody extends StatefulWidget {
 
 class _selmanBodyState extends State<selmanBody> {
   String lorem =
-  "                 Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur."
+  "                                      Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur."
       .toLowerCase()
       .replaceAll(",", "")
       .replaceAll(".", "");
@@ -166,7 +166,7 @@ class _selmanBodyState extends State<selmanBody> {
       ];
     } else if (step == 2) {
       shonwWidget = [
-        TextWidget(text: "Agam yandin ya $score aldin mubarek"),
+        TextWidget(text: "Yandın oç ya $score aldin mubarek"),
         RaisedButton(
           onPressed: step2at,
           child: TextWidget(text: "Yeniden dene agam"),
