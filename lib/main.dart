@@ -89,7 +89,7 @@ class _selmanBodyState extends State<selmanBody> {
       int now = DateTime.now().millisecondsSinceEpoch;
       //Oyun bittiginde
       if (step != 1) timer.cancel();
-      if (step == 1 && now - lastTypedAt > 2000) step++;
+      if (step == 1 && now - lastTypedAt > 4500) step++;
 
       setState(() {
         if (step != 2) ;
